@@ -1,0 +1,858 @@
+[0.000000] (-) TimerEvent: {}
+[0.001417] (articubot_one) JobQueued: {'identifier': 'articubot_one', 'dependencies': OrderedDict()}
+[0.001872] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.002790] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('serial', '/home/abcs/robo_ws/install/serial')])}
+[0.003392] (serial) JobStarted: {'identifier': 'serial'}
+[0.049535] (articubot_one) JobStarted: {'identifier': 'articubot_one'}
+[0.079886] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.082514] (serial) Command: {'cmd': ['/usr/bin/cmake', '/home/abcs/robo_ws/src/serial', '-DCMAKE_INSTALL_PREFIX=/home/abcs/robo_ws/install/serial'], 'cwd': '/home/abcs/robo_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '172.25.151.85 41080 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.25.151.85 41080 172.25.151.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099218] (-) TimerEvent: {}
+[0.114625] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'cmake'}
+[0.116874] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '/home/abcs/robo_ws/src/articubot_one', '-DCMAKE_INSTALL_PREFIX=/home/abcs/robo_ws/install/articubot_one'], 'cwd': '/home/abcs/robo_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '172.25.151.85 41080 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/articubot_one'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.25.151.85 41080 172.25.151.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.199510] (-) TimerEvent: {}
+[0.300726] (-) TimerEvent: {}
+[0.401907] (-) TimerEvent: {}
+[0.502739] (-) TimerEvent: {}
+[0.603606] (-) TimerEvent: {}
+[0.704660] (-) TimerEvent: {}
+[0.805448] (-) TimerEvent: {}
+[0.906101] (-) TimerEvent: {}
+[1.006858] (-) TimerEvent: {}
+[1.105947] (articubot_one) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.106864] (serial) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.107665] (-) TimerEvent: {}
+[1.209071] (-) TimerEvent: {}
+[1.309787] (-) TimerEvent: {}
+[1.410517] (-) TimerEvent: {}
+[1.511277] (-) TimerEvent: {}
+[1.612050] (-) TimerEvent: {}
+[1.713143] (-) TimerEvent: {}
+[1.816218] (-) TimerEvent: {}
+[1.882312] (serial) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.892106] (articubot_one) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.916397] (-) TimerEvent: {}
+[1.919001] (serial) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.919770] (articubot_one) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.016611] (-) TimerEvent: {}
+[2.117827] (-) TimerEvent: {}
+[2.220560] (-) TimerEvent: {}
+[2.321831] (-) TimerEvent: {}
+[2.344749] (articubot_one) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.351313] (articubot_one) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.355725] (serial) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.358825] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.422184] (-) TimerEvent: {}
+[2.523795] (-) TimerEvent: {}
+[2.626044] (-) TimerEvent: {}
+[2.727661] (-) TimerEvent: {}
+[2.793294] (articubot_one) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.805719] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.827869] (-) TimerEvent: {}
+[2.836699] (articubot_one) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.838902] (articubot_one) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.847369] (serial) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.850089] (serial) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.860526] (articubot_one) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.868675] (serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.928131] (-) TimerEvent: {}
+[3.029293] (-) TimerEvent: {}
+[3.130736] (-) TimerEvent: {}
+[3.232976] (-) TimerEvent: {}
+[3.303080] (articubot_one) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.307967] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.317139] (serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.321890] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.333110] (-) TimerEvent: {}
+[3.434773] (-) TimerEvent: {}
+[3.536528] (-) TimerEvent: {}
+[3.638517] (-) TimerEvent: {}
+[3.715626] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.731588] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.738677] (-) TimerEvent: {}
+[3.758107] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.760137] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.771497] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.773485] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.803642] (serial) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.804232] (articubot_one) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.838867] (-) TimerEvent: {}
+[3.940129] (-) TimerEvent: {}
+[3.996027] (articubot_one) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.998282] (articubot_one) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.998952] (serial) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.999534] (serial) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.040340] (-) TimerEvent: {}
+[4.142480] (-) TimerEvent: {}
+[4.244766] (-) TimerEvent: {}
+[4.346794] (-) TimerEvent: {}
+[4.447664] (-) TimerEvent: {}
+[4.548483] (-) TimerEvent: {}
+[4.650228] (-) TimerEvent: {}
+[4.751037] (-) TimerEvent: {}
+[4.852549] (-) TimerEvent: {}
+[4.953509] (-) TimerEvent: {}
+[5.077641] (-) TimerEvent: {}
+[5.180505] (-) TimerEvent: {}
+[5.281244] (-) TimerEvent: {}
+[5.382293] (-) TimerEvent: {}
+[5.385085] (articubot_one) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[5.386692] (serial) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)\n'}
+[5.474143] (serial) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0")  \n'}
+[5.482435] (-) TimerEvent: {}
+[5.513336] (serial) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[5.531468] (serial) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.582651] (-) TimerEvent: {}
+[5.683946] (-) TimerEvent: {}
+[5.784633] (-) TimerEvent: {}
+[5.886356] (-) TimerEvent: {}
+[5.911775] (serial) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.913446] (serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.927872] (articubot_one) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.986619] (-) TimerEvent: {}
+[6.006118] (articubot_one) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.017823] (articubot_one) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.025057] (articubot_one) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[6.070935] (articubot_one) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.086809] (articubot_one) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.087506] (-) TimerEvent: {}
+[6.099657] (articubot_one) StdoutLine: {'line': b'-- Generating done\n'}
+[6.108495] (articubot_one) StdoutLine: {'line': b'-- Build files have been written to: /home/abcs/robo_ws/build/articubot_one\n'}
+[6.123198] (articubot_one) CommandEnded: {'returncode': 0}
+[6.125463] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'build'}
+[6.128340] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abcs/robo_ws/build/articubot_one', '--', '-j4', '-l4'], 'cwd': '/home/abcs/robo_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '172.25.151.85 41080 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/articubot_one'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.25.151.85 41080 172.25.151.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[6.187833] (-) TimerEvent: {}
+[6.286315] (serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[6.288014] (serial) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[6.288745] (-) TimerEvent: {}
+[6.353872] (articubot_one) CommandEnded: {'returncode': 0}
+[6.357343] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'install'}
+[6.388959] (-) TimerEvent: {}
+[6.395282] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abcs/robo_ws/build/articubot_one'], 'cwd': '/home/abcs/robo_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '172.25.151.85 41080 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/articubot_one'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.25.151.85 41080 172.25.151.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[6.445060] (articubot_one) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.445986] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config\n'}
+[6.446614] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz\n'}
+[6.447342] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml\n'}
+[6.448195] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/map.rviz\n'}
+[6.449220] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_robot.yaml\n'}
+[6.450602] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml\n'}
+[6.451788] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/drive_bot.rviz\n'}
+[6.453083] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml\n'}
+[6.454317] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/main.rviz\n'}
+[6.455651] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml\n'}
+[6.457468] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/joystick.yaml\n'}
+[6.458813] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/gazebo_params.yaml\n'}
+[6.460050] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml\n'}
+[6.461332] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/gaz_ros2_ctl_use_sim.yaml\n'}
+[6.462738] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/empty.yaml\n'}
+[6.463951] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description\n'}
+[6.465359] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro\n'}
+[6.466527] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro\n'}
+[6.467477] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/depth_camera.xacro\n'}
+[6.468210] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro\n'}
+[6.468891] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro\n'}
+[6.470240] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/camera.xacro\n'}
+[6.471871] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/gazebo_control.xacro\n'}
+[6.472971] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/lidar.xacro\n'}
+[6.475519] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/face.xacro\n'}
+[6.476590] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch\n'}
+[6.477297] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py\n'}
+[6.477887] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/rplidar.launch.py\n'}
+[6.478447] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/cyril.launch.py\n'}
+[6.479280] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/launch_robot.launch.py\n'}
+[6.480033] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/localization_launch.py\n'}
+[6.480531] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/online_async_launch.py\n'}
+[6.481189] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py\n'}
+[6.481833] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/navigation_launch.py\n'}
+[6.482299] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/joystick.launch.py\n'}
+[6.482863] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py\n'}
+[6.483365] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py\n'}
+[6.484245] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/worlds\n'}
+[6.485043] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/worlds/empty.world\n'}
+[6.485792] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/worlds/obstacles.world\n'}
+[6.487456] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one\n'}
+[6.489253] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one\n'}
+[6.489886] (-) TimerEvent: {}
+[6.491510] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh\n'}
+[6.492663] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv\n'}
+[6.494185] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/path.sh\n'}
+[6.495204] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/path.dsv\n'}
+[6.496443] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.bash\n'}
+[6.497688] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.sh\n'}
+[6.498969] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.zsh\n'}
+[6.500218] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.dsv\n'}
+[6.501787] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/package.dsv\n'}
+[6.503531] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one\n'}
+[6.505210] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake\n'}
+[6.506376] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake\n'}
+[6.507704] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/package.xml\n'}
+[6.517650] (articubot_one) CommandEnded: {'returncode': 0}
+[6.590237] (-) TimerEvent: {}
+[6.647197] (serial) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[6.650084] (serial) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.690429] (-) TimerEvent: {}
+[6.791198] (-) TimerEvent: {}
+[6.883269] (articubot_one) JobEnded: {'identifier': 'articubot_one', 'rc': 0}
+[6.891469] (-) TimerEvent: {}
+[6.992337] (-) TimerEvent: {}
+[7.093147] (-) TimerEvent: {}
+[7.106967] (serial) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.159727] (serial) StdoutLine: {'line': b'-- Generating done\n'}
+[7.193263] (-) TimerEvent: {}
+[7.219170] (serial) StdoutLine: {'line': b'-- Build files have been written to: /home/abcs/robo_ws/build/serial\n'}
+[7.237778] (serial) CommandEnded: {'returncode': 0}
+[7.241192] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[7.242708] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abcs/robo_ws/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/abcs/robo_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '172.25.151.85 41080 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.25.151.85 41080 172.25.151.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[7.293465] (-) TimerEvent: {}
+[7.394460] (-) TimerEvent: {}
+[7.409014] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest_main\x1b[0m\n'}
+[7.409959] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial\x1b[0m\n'}
+[7.412339] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest\x1b[0m\n'}
+[7.472550] (serial) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o\x1b[0m\n'}
+[7.475086] (serial) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o\x1b[0m\n'}
+[7.494663] (-) TimerEvent: {}
+[7.551390] (serial) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[7.567274] (serial) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[7.594860] (-) TimerEvent: {}
+[7.695772] (-) TimerEvent: {}
+[7.798108] (-) TimerEvent: {}
+[7.900157] (-) TimerEvent: {}
+[8.002217] (-) TimerEvent: {}
+[8.113156] (-) TimerEvent: {}
+[8.218417] (-) TimerEvent: {}
+[8.329110] (-) TimerEvent: {}
+[8.437136] (-) TimerEvent: {}
+[8.545110] (-) TimerEvent: {}
+[8.653107] (-) TimerEvent: {}
+[8.761119] (-) TimerEvent: {}
+[8.869196] (-) TimerEvent: {}
+[8.977168] (-) TimerEvent: {}
+[9.085138] (-) TimerEvent: {}
+[9.193132] (-) TimerEvent: {}
+[9.297132] (-) TimerEvent: {}
+[9.405146] (-) TimerEvent: {}
+[9.506117] (-) TimerEvent: {}
+[9.607324] (-) TimerEvent: {}
+[9.708458] (-) TimerEvent: {}
+[9.810131] (-) TimerEvent: {}
+[9.911447] (-) TimerEvent: {}
+[10.012286] (-) TimerEvent: {}
+[10.117145] (-) TimerEvent: {}
+[10.221176] (-) TimerEvent: {}
+[10.325136] (-) TimerEvent: {}
+[10.429135] (-) TimerEvent: {}
+[10.533211] (-) TimerEvent: {}
+[10.637132] (-) TimerEvent: {}
+[10.741164] (-) TimerEvent: {}
+[10.753706] (serial) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o\x1b[0m\n'}
+[10.841476] (-) TimerEvent: {}
+[10.942613] (-) TimerEvent: {}
+[11.043804] (-) TimerEvent: {}
+[11.144871] (-) TimerEvent: {}
+[11.249156] (-) TimerEvent: {}
+[11.353141] (-) TimerEvent: {}
+[11.457137] (-) TimerEvent: {}
+[11.561144] (-) TimerEvent: {}
+[11.663037] (-) TimerEvent: {}
+[11.765150] (-) TimerEvent: {}
+[11.873115] (-) TimerEvent: {}
+[11.975848] (-) TimerEvent: {}
+[12.081168] (-) TimerEvent: {}
+[12.189143] (-) TimerEvent: {}
+[12.297162] (-) TimerEvent: {}
+[12.401173] (-) TimerEvent: {}
+[12.505149] (-) TimerEvent: {}
+[12.613144] (-) TimerEvent: {}
+[12.696168] (serial) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[12.713423] (-) TimerEvent: {}
+[12.814711] (-) TimerEvent: {}
+[12.876199] (serial) StdoutLine: {'line': b'[ 42%] Built target gtest_main\n'}
+[12.914958] (-) TimerEvent: {}
+[13.019119] (-) TimerEvent: {}
+[13.120808] (-) TimerEvent: {}
+[13.221728] (-) TimerEvent: {}
+[13.322903] (-) TimerEvent: {}
+[13.425148] (-) TimerEvent: {}
+[13.527786] (-) TimerEvent: {}
+[13.556503] (serial) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libserial.a\x1b[0m\n'}
+[13.628034] (-) TimerEvent: {}
+[13.706533] (serial) StdoutLine: {'line': b'[ 50%] Built target serial\n'}
+[13.728280] (-) TimerEvent: {}
+[13.750413] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial_example\x1b[0m\n'}
+[13.794051] (serial) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o\x1b[0m\n'}
+[13.828457] (-) TimerEvent: {}
+[13.932107] (-) TimerEvent: {}
+[14.033665] (-) TimerEvent: {}
+[14.134587] (-) TimerEvent: {}
+[14.235449] (-) TimerEvent: {}
+[14.336266] (-) TimerEvent: {}
+[14.437210] (-) TimerEvent: {}
+[14.538023] (-) TimerEvent: {}
+[14.638889] (-) TimerEvent: {}
+[14.739936] (-) TimerEvent: {}
+[14.841084] (-) TimerEvent: {}
+[14.941995] (-) TimerEvent: {}
+[15.042934] (-) TimerEvent: {}
+[15.144119] (-) TimerEvent: {}
+[15.244998] (-) TimerEvent: {}
+[15.345858] (-) TimerEvent: {}
+[15.436599] (serial) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX executable serial_example\x1b[0m\n'}
+[15.446063] (-) TimerEvent: {}
+[15.551601] (-) TimerEvent: {}
+[15.656168] (-) TimerEvent: {}
+[15.759054] (-) TimerEvent: {}
+[15.789315] (serial) StdoutLine: {'line': b'[ 64%] Built target serial_example\n'}
+[15.859221] (-) TimerEvent: {}
+[15.960083] (-) TimerEvent: {}
+[16.061037] (-) TimerEvent: {}
+[16.162528] (-) TimerEvent: {}
+[16.263615] (-) TimerEvent: {}
+[16.364677] (-) TimerEvent: {}
+[16.465999] (-) TimerEvent: {}
+[16.567396] (-) TimerEvent: {}
+[16.668227] (-) TimerEvent: {}
+[16.769324] (-) TimerEvent: {}
+[16.870067] (-) TimerEvent: {}
+[16.970838] (-) TimerEvent: {}
+[17.071603] (-) TimerEvent: {}
+[17.172416] (-) TimerEvent: {}
+[17.273325] (-) TimerEvent: {}
+[17.374378] (-) TimerEvent: {}
+[17.475892] (-) TimerEvent: {}
+[17.576794] (-) TimerEvent: {}
+[17.677708] (-) TimerEvent: {}
+[17.778703] (-) TimerEvent: {}
+[17.879833] (-) TimerEvent: {}
+[17.980656] (-) TimerEvent: {}
+[18.081498] (-) TimerEvent: {}
+[18.182376] (-) TimerEvent: {}
+[18.283319] (-) TimerEvent: {}
+[18.384807] (-) TimerEvent: {}
+[18.486727] (-) TimerEvent: {}
+[18.587599] (-) TimerEvent: {}
+[18.688402] (-) TimerEvent: {}
+[18.789249] (-) TimerEvent: {}
+[18.890081] (-) TimerEvent: {}
+[18.990905] (-) TimerEvent: {}
+[19.091836] (-) TimerEvent: {}
+[19.192801] (-) TimerEvent: {}
+[19.294248] (-) TimerEvent: {}
+[19.395115] (-) TimerEvent: {}
+[19.496234] (-) TimerEvent: {}
+[19.597799] (-) TimerEvent: {}
+[19.698623] (-) TimerEvent: {}
+[19.799458] (-) TimerEvent: {}
+[19.900580] (-) TimerEvent: {}
+[20.002048] (-) TimerEvent: {}
+[20.102924] (-) TimerEvent: {}
+[20.203755] (-) TimerEvent: {}
+[20.304654] (-) TimerEvent: {}
+[20.405579] (-) TimerEvent: {}
+[20.506385] (-) TimerEvent: {}
+[20.607202] (-) TimerEvent: {}
+[20.708085] (-) TimerEvent: {}
+[20.808880] (-) TimerEvent: {}
+[20.909803] (-) TimerEvent: {}
+[21.010734] (-) TimerEvent: {}
+[21.111595] (-) TimerEvent: {}
+[21.212314] (-) TimerEvent: {}
+[21.313046] (-) TimerEvent: {}
+[21.413815] (-) TimerEvent: {}
+[21.514569] (-) TimerEvent: {}
+[21.615278] (-) TimerEvent: {}
+[21.716114] (-) TimerEvent: {}
+[21.816895] (-) TimerEvent: {}
+[21.917728] (-) TimerEvent: {}
+[22.018646] (-) TimerEvent: {}
+[22.119373] (-) TimerEvent: {}
+[22.220170] (-) TimerEvent: {}
+[22.320967] (-) TimerEvent: {}
+[22.421739] (-) TimerEvent: {}
+[22.522455] (-) TimerEvent: {}
+[22.623231] (-) TimerEvent: {}
+[22.723963] (-) TimerEvent: {}
+[22.824798] (-) TimerEvent: {}
+[22.925997] (-) TimerEvent: {}
+[23.026826] (-) TimerEvent: {}
+[23.127921] (-) TimerEvent: {}
+[23.228769] (-) TimerEvent: {}
+[23.329816] (-) TimerEvent: {}
+[23.430558] (-) TimerEvent: {}
+[23.531448] (-) TimerEvent: {}
+[23.632547] (-) TimerEvent: {}
+[23.733362] (-) TimerEvent: {}
+[23.834310] (-) TimerEvent: {}
+[23.935274] (-) TimerEvent: {}
+[24.036163] (-) TimerEvent: {}
+[24.119781] (serial) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[24.136320] (-) TimerEvent: {}
+[24.237232] (-) TimerEvent: {}
+[24.338089] (-) TimerEvent: {}
+[24.384675] (serial) StdoutLine: {'line': b'[ 71%] Built target gtest\n'}
+[24.425373] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial-test-timer\x1b[0m\n'}
+[24.427928] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target serial-test\x1b[0m\n'}
+[24.438348] (-) TimerEvent: {}
+[24.492517] (serial) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o\x1b[0m\n'}
+[24.493781] (serial) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o\x1b[0m\n'}
+[24.538558] (-) TimerEvent: {}
+[24.640060] (-) TimerEvent: {}
+[24.745124] (-) TimerEvent: {}
+[24.845986] (-) TimerEvent: {}
+[24.946846] (-) TimerEvent: {}
+[25.048672] (-) TimerEvent: {}
+[25.150417] (-) TimerEvent: {}
+[25.252316] (-) TimerEvent: {}
+[25.354461] (-) TimerEvent: {}
+[25.456466] (-) TimerEvent: {}
+[25.558428] (-) TimerEvent: {}
+[25.660405] (-) TimerEvent: {}
+[25.761995] (-) TimerEvent: {}
+[25.865884] (-) TimerEvent: {}
+[25.967484] (-) TimerEvent: {}
+[26.069172] (-) TimerEvent: {}
+[26.171269] (-) TimerEvent: {}
+[26.273702] (-) TimerEvent: {}
+[26.374758] (-) TimerEvent: {}
+[26.476611] (-) TimerEvent: {}
+[26.578401] (-) TimerEvent: {}
+[26.680447] (-) TimerEvent: {}
+[26.782126] (-) TimerEvent: {}
+[26.883975] (-) TimerEvent: {}
+[26.985805] (-) TimerEvent: {}
+[27.087611] (-) TimerEvent: {}
+[27.189670] (-) TimerEvent: {}
+[27.290589] (-) TimerEvent: {}
+[27.392327] (-) TimerEvent: {}
+[27.493308] (-) TimerEvent: {}
+[27.595034] (-) TimerEvent: {}
+[27.696040] (-) TimerEvent: {}
+[27.797123] (-) TimerEvent: {}
+[27.898220] (-) TimerEvent: {}
+[27.999185] (-) TimerEvent: {}
+[28.100143] (-) TimerEvent: {}
+[28.209247] (-) TimerEvent: {}
+[28.217664] (serial) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable serial-test-timer\x1b[0m\n'}
+[28.309528] (-) TimerEvent: {}
+[28.412301] (-) TimerEvent: {}
+[28.514679] (-) TimerEvent: {}
+[28.615540] (-) TimerEvent: {}
+[28.718035] (-) TimerEvent: {}
+[28.803953] (serial) StdoutLine: {'line': b'[ 92%] Built target serial-test-timer\n'}
+[28.818319] (-) TimerEvent: {}
+[28.919314] (-) TimerEvent: {}
+[28.959715] (serial) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable serial-test\x1b[0m\n'}
+[29.019627] (-) TimerEvent: {}
+[29.121013] (-) TimerEvent: {}
+[29.222045] (-) TimerEvent: {}
+[29.322848] (-) TimerEvent: {}
+[29.423675] (-) TimerEvent: {}
+[29.507978] (serial) StdoutLine: {'line': b'[100%] Built target serial-test\n'}
+[29.523858] (-) TimerEvent: {}
+[29.587954] (serial) CommandEnded: {'returncode': 0}
+[29.590739] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[29.591664] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abcs/robo_ws/build/serial'], 'cwd': '/home/abcs/robo_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '172.25.151.85 41080 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.25.151.85 41080 172.25.151.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[29.624359] (-) TimerEvent: {}
+[29.636253] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.637162] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/lib/libserial.a\n'}
+[29.640537] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/include/serial/serial.h\n'}
+[29.641680] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/include/serial/v8stdint.h\n'}
+[29.643027] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[29.644063] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[29.645599] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[29.647014] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[29.648116] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[29.649211] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[29.650259] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/environment/path.sh\n'}
+[29.651319] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/environment/path.dsv\n'}
+[29.652347] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/local_setup.bash\n'}
+[29.653381] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/local_setup.sh\n'}
+[29.654354] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/local_setup.zsh\n'}
+[29.655326] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/local_setup.dsv\n'}
+[29.656327] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/package.dsv\n'}
+[29.657621] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[29.658940] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[29.660038] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[29.661213] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[29.661958] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[29.662953] (serial) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/serial/share/serial/package.xml\n'}
+[29.669777] (serial) CommandEnded: {'returncode': 0}
+[29.725260] (-) TimerEvent: {}
+[29.772051] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[29.777489] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[29.808098] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[29.809781] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '/home/abcs/robo_ws/src/diffdrive_arduino', '-DCMAKE_INSTALL_PREFIX=/home/abcs/robo_ws/install/diffdrive_arduino'], 'cwd': '/home/abcs/robo_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '172.25.151.85 41080 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abcs/robo_ws/install/serial/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/abcs/robo_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.25.151.85 41080 172.25.151.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/abcs/robo_ws/install/serial:/opt/ros/foxy')]), 'shell': False}
+[29.825477] (-) TimerEvent: {}
+[29.926436] (-) TimerEvent: {}
+[30.028181] (-) TimerEvent: {}
+[30.089002] (diffdrive_arduino) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[30.128535] (-) TimerEvent: {}
+[30.229944] (-) TimerEvent: {}
+[30.331121] (-) TimerEvent: {}
+[30.351178] (diffdrive_arduino) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[30.370123] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[30.431272] (-) TimerEvent: {}
+[30.532266] (-) TimerEvent: {}
+[30.633344] (-) TimerEvent: {}
+[30.677261] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[30.680373] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[30.733523] (-) TimerEvent: {}
+[30.834320] (-) TimerEvent: {}
+[30.935629] (-) TimerEvent: {}
+[30.985169] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[31.024264] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[31.026153] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[31.035958] (-) TimerEvent: {}
+[31.040104] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[31.136179] (-) TimerEvent: {}
+[31.237102] (-) TimerEvent: {}
+[31.338176] (-) TimerEvent: {}
+[31.386217] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[31.390334] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[31.438347] (-) TimerEvent: {}
+[31.539193] (-) TimerEvent: {}
+[31.639994] (-) TimerEvent: {}
+[31.722835] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[31.740146] (-) TimerEvent: {}
+[31.761847] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[31.763706] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[31.789480] (diffdrive_arduino) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[31.840357] (-) TimerEvent: {}
+[31.926248] (diffdrive_arduino) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[31.927079] (diffdrive_arduino) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[31.940727] (-) TimerEvent: {}
+[32.041834] (-) TimerEvent: {}
+[32.142849] (-) TimerEvent: {}
+[32.243685] (-) TimerEvent: {}
+[32.344435] (-) TimerEvent: {}
+[32.445191] (-) TimerEvent: {}
+[32.545901] (-) TimerEvent: {}
+[32.646567] (-) TimerEvent: {}
+[32.747299] (-) TimerEvent: {}
+[32.848147] (-) TimerEvent: {}
+[32.949218] (-) TimerEvent: {}
+[33.050138] (-) TimerEvent: {}
+[33.151166] (-) TimerEvent: {}
+[33.153269] (diffdrive_arduino) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/home/abcs/robo_ws/install/serial/share/serial/cmake)\n'}
+[33.188429] (diffdrive_arduino) StdoutLine: {'line': b'-- Found hardware_interface: 0.11.0 (/opt/ros/foxy/share/hardware_interface/cmake)\n'}
+[33.251310] (-) TimerEvent: {}
+[33.352076] (-) TimerEvent: {}
+[33.452834] (-) TimerEvent: {}
+[33.553109] (diffdrive_arduino) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[33.554526] (-) TimerEvent: {}
+[33.636675] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[33.654727] (-) TimerEvent: {}
+[33.755590] (-) TimerEvent: {}
+[33.856420] (-) TimerEvent: {}
+[33.957253] (-) TimerEvent: {}
+[34.057983] (-) TimerEvent: {}
+[34.158708] (-) TimerEvent: {}
+[34.244422] (diffdrive_arduino) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[34.258922] (-) TimerEvent: {}
+[34.359691] (-) TimerEvent: {}
+[34.460484] (-) TimerEvent: {}
+[34.494343] (diffdrive_arduino) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[34.560698] (-) TimerEvent: {}
+[34.661457] (-) TimerEvent: {}
+[34.762143] (-) TimerEvent: {}
+[34.862785] (-) TimerEvent: {}
+[34.963456] (-) TimerEvent: {}
+[35.064148] (-) TimerEvent: {}
+[35.138988] (diffdrive_arduino) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[35.164299] (-) TimerEvent: {}
+[35.264973] (-) TimerEvent: {}
+[35.365652] (-) TimerEvent: {}
+[35.466366] (-) TimerEvent: {}
+[35.567080] (-) TimerEvent: {}
+[35.668086] (-) TimerEvent: {}
+[35.769041] (-) TimerEvent: {}
+[35.870130] (-) TimerEvent: {}
+[35.970923] (-) TimerEvent: {}
+[36.072108] (-) TimerEvent: {}
+[36.172875] (-) TimerEvent: {}
+[36.274126] (-) TimerEvent: {}
+[36.374853] (-) TimerEvent: {}
+[36.475585] (-) TimerEvent: {}
+[36.576314] (-) TimerEvent: {}
+[36.677021] (-) TimerEvent: {}
+[36.777727] (-) TimerEvent: {}
+[36.878404] (-) TimerEvent: {}
+[36.979034] (-) TimerEvent: {}
+[37.079726] (-) TimerEvent: {}
+[37.180421] (-) TimerEvent: {}
+[37.281145] (-) TimerEvent: {}
+[37.381829] (-) TimerEvent: {}
+[37.456587] (diffdrive_arduino) StdoutLine: {'line': b'-- Found controller_manager: 0.11.0 (/opt/ros/foxy/share/controller_manager/cmake)\n'}
+[37.481949] (-) TimerEvent: {}
+[37.582650] (-) TimerEvent: {}
+[37.683724] (-) TimerEvent: {}
+[37.784639] (-) TimerEvent: {}
+[37.885532] (-) TimerEvent: {}
+[37.924603] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[37.934333] (diffdrive_arduino) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[37.938655] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[37.985746] (-) TimerEvent: {}
+[38.086601] (-) TimerEvent: {}
+[38.187490] (-) TimerEvent: {}
+[38.264282] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[38.265478] (diffdrive_arduino) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[38.287672] (-) TimerEvent: {}
+[38.388411] (-) TimerEvent: {}
+[38.489211] (-) TimerEvent: {}
+[38.567463] (diffdrive_arduino) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[38.568295] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[38.589375] (-) TimerEvent: {}
+[38.690159] (-) TimerEvent: {}
+[38.791027] (-) TimerEvent: {}
+[38.824110] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[38.825178] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[38.891297] (-) TimerEvent: {}
+[38.992639] (-) TimerEvent: {}
+[39.094146] (-) TimerEvent: {}
+[39.132463] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[39.135999] (diffdrive_arduino) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[39.194303] (-) TimerEvent: {}
+[39.295009] (-) TimerEvent: {}
+[39.395767] (-) TimerEvent: {}
+[39.496485] (-) TimerEvent: {}
+[39.597314] (-) TimerEvent: {}
+[39.698074] (-) TimerEvent: {}
+[39.798846] (-) TimerEvent: {}
+[39.899664] (-) TimerEvent: {}
+[40.000480] (-) TimerEvent: {}
+[40.101380] (-) TimerEvent: {}
+[40.202277] (-) TimerEvent: {}
+[40.303033] (-) TimerEvent: {}
+[40.403876] (-) TimerEvent: {}
+[40.504622] (-) TimerEvent: {}
+[40.605445] (-) TimerEvent: {}
+[40.706241] (-) TimerEvent: {}
+[40.807046] (-) TimerEvent: {}
+[40.908059] (-) TimerEvent: {}
+[41.009488] (-) TimerEvent: {}
+[41.110269] (-) TimerEvent: {}
+[41.211115] (-) TimerEvent: {}
+[41.311978] (-) TimerEvent: {}
+[41.412723] (-) TimerEvent: {}
+[41.513433] (-) TimerEvent: {}
+[41.614557] (-) TimerEvent: {}
+[41.678090] (diffdrive_arduino) StdoutLine: {'line': b'-- Configuring done\n'}
+[41.714681] (-) TimerEvent: {}
+[41.815555] (-) TimerEvent: {}
+[41.916288] (-) TimerEvent: {}
+[42.017116] (-) TimerEvent: {}
+[42.056211] (diffdrive_arduino) StdoutLine: {'line': b'-- Generating done\n'}
+[42.117292] (-) TimerEvent: {}
+[42.151555] (diffdrive_arduino) StdoutLine: {'line': b'-- Build files have been written to: /home/abcs/robo_ws/build/diffdrive_arduino\n'}
+[42.185467] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[42.187249] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[42.188287] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abcs/robo_ws/build/diffdrive_arduino', '--', '-j4', '-l4'], 'cwd': '/home/abcs/robo_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '172.25.151.85 41080 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abcs/robo_ws/install/serial/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/abcs/robo_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.25.151.85 41080 172.25.151.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/abcs/robo_ws/install/serial:/opt/ros/foxy')]), 'shell': False}
+[42.217517] (-) TimerEvent: {}
+[42.318359] (-) TimerEvent: {}
+[42.363658] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target diffdrive_arduino\x1b[0m\n'}
+[42.364312] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fake_robot\x1b[0m\n'}
+[42.418527] (-) TimerEvent: {}
+[42.519362] (-) TimerEvent: {}
+[42.620347] (-) TimerEvent: {}
+[42.721255] (-) TimerEvent: {}
+[42.822311] (-) TimerEvent: {}
+[42.923210] (-) TimerEvent: {}
+[42.926650] (diffdrive_arduino) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o\x1b[0m\n'}
+[42.945480] (diffdrive_arduino) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/wheel.cpp.o\x1b[0m\n'}
+[42.975092] (diffdrive_arduino) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o\x1b[0m\n'}
+[42.989154] (diffdrive_arduino) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/wheel.cpp.o\x1b[0m\n'}
+[43.023720] (-) TimerEvent: {}
+[43.125605] (-) TimerEvent: {}
+[43.226799] (-) TimerEvent: {}
+[43.327994] (-) TimerEvent: {}
+[43.429514] (-) TimerEvent: {}
+[43.530421] (-) TimerEvent: {}
+[43.717109] (-) TimerEvent: {}
+[43.818040] (-) TimerEvent: {}
+[43.919795] (-) TimerEvent: {}
+[44.029165] (-) TimerEvent: {}
+[44.096373] (diffdrive_arduino) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o\x1b[0m\n'}
+[44.129413] (-) TimerEvent: {}
+[44.231685] (-) TimerEvent: {}
+[44.335035] (-) TimerEvent: {}
+[44.436882] (-) TimerEvent: {}
+[44.538769] (-) TimerEvent: {}
+[44.643958] (-) TimerEvent: {}
+[44.745603] (-) TimerEvent: {}
+[44.847656] (-) TimerEvent: {}
+[44.949465] (-) TimerEvent: {}
+[45.051094] (-) TimerEvent: {}
+[45.153114] (-) TimerEvent: {}
+[45.254979] (-) TimerEvent: {}
+[45.356956] (-) TimerEvent: {}
+[45.459071] (-) TimerEvent: {}
+[45.561747] (-) TimerEvent: {}
+[45.663929] (-) TimerEvent: {}
+[45.765886] (-) TimerEvent: {}
+[45.866866] (-) TimerEvent: {}
+[45.968331] (-) TimerEvent: {}
+[46.069422] (-) TimerEvent: {}
+[46.173108] (-) TimerEvent: {}
+[46.277137] (-) TimerEvent: {}
+[46.385125] (-) TimerEvent: {}
+[46.489149] (-) TimerEvent: {}
+[46.590420] (-) TimerEvent: {}
+[46.691647] (-) TimerEvent: {}
+[46.792887] (-) TimerEvent: {}
+[46.894368] (-) TimerEvent: {}
+[46.996207] (-) TimerEvent: {}
+[47.097254] (-) TimerEvent: {}
+[47.198279] (-) TimerEvent: {}
+[47.300289] (-) TimerEvent: {}
+[47.402721] (-) TimerEvent: {}
+[47.505804] (-) TimerEvent: {}
+[47.607763] (-) TimerEvent: {}
+[47.708765] (-) TimerEvent: {}
+[47.810582] (-) TimerEvent: {}
+[47.912440] (-) TimerEvent: {}
+[48.014358] (-) TimerEvent: {}
+[48.116063] (-) TimerEvent: {}
+[48.217791] (-) TimerEvent: {}
+[48.325121] (-) TimerEvent: {}
+[48.429151] (-) TimerEvent: {}
+[48.530077] (-) TimerEvent: {}
+[48.630971] (-) TimerEvent: {}
+[48.731938] (-) TimerEvent: {}
+[48.832830] (-) TimerEvent: {}
+[48.933827] (-) TimerEvent: {}
+[49.034767] (-) TimerEvent: {}
+[49.135663] (-) TimerEvent: {}
+[49.236644] (-) TimerEvent: {}
+[49.337590] (-) TimerEvent: {}
+[49.438446] (-) TimerEvent: {}
+[49.539428] (-) TimerEvent: {}
+[49.640376] (-) TimerEvent: {}
+[49.741193] (-) TimerEvent: {}
+[49.845115] (-) TimerEvent: {}
+[49.949153] (-) TimerEvent: {}
+[50.050122] (-) TimerEvent: {}
+[50.151927] (-) TimerEvent: {}
+[50.254603] (-) TimerEvent: {}
+[50.355562] (-) TimerEvent: {}
+[50.456590] (-) TimerEvent: {}
+[50.557528] (-) TimerEvent: {}
+[50.658403] (-) TimerEvent: {}
+[50.759271] (-) TimerEvent: {}
+[50.860146] (-) TimerEvent: {}
+[50.961079] (-) TimerEvent: {}
+[51.061998] (-) TimerEvent: {}
+[51.167590] (-) TimerEvent: {}
+[51.269354] (-) TimerEvent: {}
+[51.371147] (-) TimerEvent: {}
+[51.472861] (-) TimerEvent: {}
+[51.574929] (-) TimerEvent: {}
+[51.681132] (-) TimerEvent: {}
+[51.782037] (-) TimerEvent: {}
+[51.883579] (-) TimerEvent: {}
+[51.985244] (-) TimerEvent: {}
+[52.087525] (-) TimerEvent: {}
+[52.189355] (-) TimerEvent: {}
+[52.291624] (-) TimerEvent: {}
+[52.393548] (-) TimerEvent: {}
+[52.501106] (-) TimerEvent: {}
+[52.605122] (-) TimerEvent: {}
+[52.706066] (-) TimerEvent: {}
+[52.807607] (-) TimerEvent: {}
+[52.909580] (-) TimerEvent: {}
+[53.012096] (-) TimerEvent: {}
+[53.114270] (-) TimerEvent: {}
+[53.216220] (-) TimerEvent: {}
+[53.317847] (-) TimerEvent: {}
+[53.419610] (-) TimerEvent: {}
+[53.521734] (-) TimerEvent: {}
+[53.624043] (-) TimerEvent: {}
+[53.726645] (-) TimerEvent: {}
+[53.828571] (-) TimerEvent: {}
+[53.933282] (-) TimerEvent: {}
+[54.034618] (-) TimerEvent: {}
+[54.136687] (-) TimerEvent: {}
+[54.238411] (-) TimerEvent: {}
+[54.340433] (-) TimerEvent: {}
+[54.442068] (-) TimerEvent: {}
+[54.543536] (-) TimerEvent: {}
+[54.645262] (-) TimerEvent: {}
+[54.746214] (-) TimerEvent: {}
+[54.847690] (-) TimerEvent: {}
+[54.949560] (-) TimerEvent: {}
+[55.051041] (-) TimerEvent: {}
+[55.152734] (-) TimerEvent: {}
+[55.254668] (-) TimerEvent: {}
+[55.356224] (-) TimerEvent: {}
+[55.457976] (-) TimerEvent: {}
+[55.559757] (-) TimerEvent: {}
+[55.661516] (-) TimerEvent: {}
+[55.763200] (-) TimerEvent: {}
+[55.864830] (-) TimerEvent: {}
+[55.966566] (-) TimerEvent: {}
+[56.068270] (-) TimerEvent: {}
+[56.172988] (-) TimerEvent: {}
+[56.273858] (-) TimerEvent: {}
+[56.374731] (-) TimerEvent: {}
+[56.476366] (-) TimerEvent: {}
+[56.577561] (-) TimerEvent: {}
+[56.678740] (-) TimerEvent: {}
+[56.780966] (-) TimerEvent: {}
+[56.881979] (-) TimerEvent: {}
+[56.984771] (-) TimerEvent: {}
+[57.001496] (diffdrive_arduino) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libfake_robot.so\x1b[0m\n'}
+[57.085128] (-) TimerEvent: {}
+[57.087419] (diffdrive_arduino) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libdiffdrive_arduino.so\x1b[0m\n'}
+[57.185599] (-) TimerEvent: {}
+[57.288686] (-) TimerEvent: {}
+[57.390290] (-) TimerEvent: {}
+[57.492080] (-) TimerEvent: {}
+[57.594962] (-) TimerEvent: {}
+[57.697800] (-) TimerEvent: {}
+[57.799295] (-) TimerEvent: {}
+[57.900402] (-) TimerEvent: {}
+[58.002397] (-) TimerEvent: {}
+[58.106264] (-) TimerEvent: {}
+[58.210154] (-) TimerEvent: {}
+[58.312696] (-) TimerEvent: {}
+[58.416177] (-) TimerEvent: {}
+[58.492800] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target fake_robot\n'}
+[58.516379] (-) TimerEvent: {}
+[58.524877] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target diffdrive_arduino\n'}
+[58.568642] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[58.571561] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'install'}
+[58.572703] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abcs/robo_ws/build/diffdrive_arduino'], 'cwd': '/home/abcs/robo_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '172.25.151.85 41080 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abcs/robo_ws/install/serial/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/abcs/robo_ws/install/serial:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.25.151.85 41080 172.25.151.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/abcs/robo_ws/install/serial:/opt/ros/foxy')]), 'shell': False}
+[58.610264] (diffdrive_arduino) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[58.610938] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/robot_hardware.xml\n'}
+[58.611874] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/fake_robot_hardware.xml\n'}
+[58.613369] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so\n'}
+[58.616546] (-) TimerEvent: {}
+[58.619110] (diffdrive_arduino) StdoutLine: {'line': b'-- Set runtime path of "/home/abcs/robo_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so" to ""\n'}
+[58.619692] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/lib/libfake_robot.so\n'}
+[58.624547] (diffdrive_arduino) StdoutLine: {'line': b'-- Set runtime path of "/home/abcs/robo_ws/install/diffdrive_arduino/lib/libfake_robot.so" to ""\n'}
+[58.625141] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/controllers\n'}
+[58.625556] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/controllers/robot_controller_example.yaml\n'}
+[58.626137] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino\n'}
+[58.626511] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/test_robot.launch.py\n'}
+[58.627165] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/fake_robot.launch.py\n'}
+[58.628339] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh\n'}
+[58.629422] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv\n'}
+[58.630775] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino\n'}
+[58.632097] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino\n'}
+[58.633233] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh\n'}
+[58.634309] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv\n'}
+[58.635282] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh\n'}
+[58.636224] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv\n'}
+[58.637176] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash\n'}
+[58.638121] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh\n'}
+[58.639162] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh\n'}
+[58.640116] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv\n'}
+[58.641053] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv\n'}
+[58.642247] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino\n'}
+[58.643568] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino\n'}
+[58.644909] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[58.646043] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[58.647083] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake\n'}
+[58.647872] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake\n'}
+[58.648873] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml\n'}
+[58.654386] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[58.717419] (-) TimerEvent: {}
+[58.759361] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 0}
+[58.762588] (-) EventReactorShutdown: {}

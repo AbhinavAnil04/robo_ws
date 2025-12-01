@@ -1,0 +1,53 @@
+[0.070s] Invoking command in '/home/abcs/robo_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy /usr/bin/cmake /home/abcs/robo_ws/src/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/abcs/robo_ws/install/diffdrive_arduino
+[0.142s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.268s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.329s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.365s] -- Found serial: 1.2.1 (/home/abcs/robo_ws/install/serial/share/serial/cmake)
+[1.375s] -- Found hardware_interface: 0.11.0 (/opt/ros/foxy/share/hardware_interface/cmake)
+[1.550s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.572s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.571s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.488s] -- Found controller_manager: 0.11.0 (/opt/ros/foxy/share/controller_manager/cmake)
+[4.733s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[4.743s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.917s] -- Configuring done
+[7.236s] -- Generating done
+[7.303s] -- Build files have been written to: /home/abcs/robo_ws/build/diffdrive_arduino
+[7.330s] Invoked command in '/home/abcs/robo_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy /usr/bin/cmake /home/abcs/robo_ws/src/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/abcs/robo_ws/install/diffdrive_arduino
+[7.338s] Invoking command in '/home/abcs/robo_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/diffdrive_arduino -- -j4 -l4
+[7.626s] [ 14%] [32m[1mLinking CXX shared library libfake_robot.so[0m
+[7.634s] [ 28%] [32m[1mLinking CXX shared library libdiffdrive_arduino.so[0m
+[9.000s] [ 57%] Built target fake_robot
+[9.051s] [100%] Built target diffdrive_arduino
+[9.093s] Invoked command in '/home/abcs/robo_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/diffdrive_arduino -- -j4 -l4
+[9.104s] Invoking command in '/home/abcs/robo_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/diffdrive_arduino
+[9.137s] -- Install configuration: ""
+[9.138s] -- Execute custom install script
+[9.139s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino//robot_hardware.xml
+[9.174s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino//fake_robot_hardware.xml
+[9.209s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so
+[9.243s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/lib/libfake_robot.so
+[9.280s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/controllers/robot_controller_example.yaml
+[9.315s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/fake_robot.launch.py
+[9.350s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/test_robot.launch.py
+[9.384s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh
+[9.419s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv
+[9.454s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino
+[9.491s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino
+[9.525s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh
+[9.560s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv
+[9.594s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh
+[9.629s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv
+[9.663s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash
+[9.697s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh
+[9.730s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh
+[9.766s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv
+[9.800s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv
+[9.835s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino
+[9.869s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino
+[9.903s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_libraries-extras.cmake
+[9.938s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.972s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake
+[10.007s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake
+[10.043s] -- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml
+[10.085s] Invoked command in '/home/abcs/robo_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/diffdrive_arduino

@@ -1,0 +1,88 @@
+[0.077s] Invoking command in '/home/abcs/robo_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/abcs/robo_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/abcs/robo_ws/install/articubot_one
+[1.056s] -- The C compiler identification is GNU 9.4.0
+[1.842s] -- The CXX compiler identification is GNU 9.4.0
+[1.870s] -- Check for working C compiler: /usr/bin/cc
+[2.295s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.301s] -- Detecting C compiler ABI info
+[2.743s] -- Detecting C compiler ABI info - done
+[2.787s] -- Detecting C compile features
+[2.789s] -- Detecting C compile features - done
+[2.811s] -- Check for working CXX compiler: /usr/bin/c++
+[3.253s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.258s] -- Detecting CXX compiler ABI info
+[3.666s] -- Detecting CXX compiler ABI info - done
+[3.708s] -- Detecting CXX compile features
+[3.710s] -- Detecting CXX compile features - done
+[3.754s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.948s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.948s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.335s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[5.878s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.956s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.968s] -- Added test 'lint_cmake' to check CMake code style
+[5.975s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[6.021s] -- Added test 'xmllint' to check XML markup files
+[6.037s] -- Configuring done
+[6.050s] -- Generating done
+[6.059s] -- Build files have been written to: /home/abcs/robo_ws/build/articubot_one
+[6.074s] Invoked command in '/home/abcs/robo_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/abcs/robo_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/abcs/robo_ws/install/articubot_one
+[6.088s] Invoking command in '/home/abcs/robo_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/articubot_one -- -j4 -l4
+[6.305s] Invoked command in '/home/abcs/robo_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/articubot_one -- -j4 -l4
+[6.353s] Invoking command in '/home/abcs/robo_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/articubot_one
+[6.395s] -- Install configuration: ""
+[6.396s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config
+[6.397s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz
+[6.397s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml
+[6.398s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/map.rviz
+[6.399s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_robot.yaml
+[6.401s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml
+[6.402s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/drive_bot.rviz
+[6.403s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml
+[6.404s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/main.rviz
+[6.407s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml
+[6.408s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/joystick.yaml
+[6.409s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/gazebo_params.yaml
+[6.410s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml
+[6.412s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/gaz_ros2_ctl_use_sim.yaml
+[6.413s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/empty.yaml
+[6.414s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description
+[6.416s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro
+[6.417s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
+[6.418s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/depth_camera.xacro
+[6.418s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro
+[6.420s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
+[6.421s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/camera.xacro
+[6.422s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/gazebo_control.xacro
+[6.424s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/lidar.xacro
+[6.426s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/face.xacro
+[6.427s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch
+[6.427s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py
+[6.428s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/rplidar.launch.py
+[6.429s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/cyril.launch.py
+[6.429s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/launch_robot.launch.py
+[6.430s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/localization_launch.py
+[6.431s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/online_async_launch.py
+[6.431s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py
+[6.432s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/navigation_launch.py
+[6.432s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/joystick.launch.py
+[6.433s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
+[6.433s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py
+[6.434s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/worlds
+[6.435s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/worlds/empty.world
+[6.436s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/worlds/obstacles.world
+[6.437s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
+[6.439s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
+[6.442s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh
+[6.443s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv
+[6.444s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/path.sh
+[6.445s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/path.dsv
+[6.446s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.bash
+[6.448s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.sh
+[6.449s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.zsh
+[6.450s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.dsv
+[6.452s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/package.dsv
+[6.454s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one
+[6.455s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake
+[6.456s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake
+[6.458s] -- Installing: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/package.xml
+[6.468s] Invoked command in '/home/abcs/robo_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/articubot_one

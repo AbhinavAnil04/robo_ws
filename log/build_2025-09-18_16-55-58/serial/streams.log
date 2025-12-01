@@ -1,0 +1,44 @@
+[0.129s] Invoking command in '/home/abcs/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake /home/abcs/robo_ws/src/serial -DCMAKE_INSTALL_PREFIX=/home/abcs/robo_ws/install/serial
+[0.410s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.577s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.646s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.742s] -- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[1.808s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.223s] -- Configuring done
+[2.351s] -- Generating done
+[2.374s] -- Build files have been written to: /home/abcs/robo_ws/build/serial
+[2.412s] Invoked command in '/home/abcs/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake /home/abcs/robo_ws/src/serial -DCMAKE_INSTALL_PREFIX=/home/abcs/robo_ws/install/serial
+[2.421s] Invoking command in '/home/abcs/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/serial -- -j4 -l4
+[2.699s] [ 28%] Built target serial
+[2.771s] [ 42%] Built target gtest
+[2.813s] [ 57%] Built target gtest_main
+[2.993s] [ 71%] Built target serial_example
+[3.030s] [ 85%] Built target serial-test-timer
+[3.045s] [100%] Built target serial-test
+[3.150s] Invoked command in '/home/abcs/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/serial -- -j4 -l4
+[3.165s] Invoking command in '/home/abcs/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/serial
+[3.202s] -- Install configuration: ""
+[3.203s] -- Execute custom install script
+[3.204s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/lib/libserial.a
+[3.205s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/include/serial/serial.h
+[3.206s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/include/serial/v8stdint.h
+[3.209s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/library_path.sh
+[3.211s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/library_path.dsv
+[3.213s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[3.215s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[3.216s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[3.218s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[3.219s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/path.sh
+[3.221s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/path.dsv
+[3.222s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.bash
+[3.224s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.sh
+[3.225s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.zsh
+[3.227s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.dsv
+[3.227s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/package.dsv
+[3.266s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/packages/serial
+[3.268s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.270s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[3.272s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[3.273s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[3.275s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/package.xml
+[3.286s] Invoked command in '/home/abcs/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/serial

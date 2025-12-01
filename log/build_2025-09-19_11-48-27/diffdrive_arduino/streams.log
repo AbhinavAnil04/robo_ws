@@ -1,0 +1,23 @@
+[0.120s] Invoking command in '/home/abcs/robo_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/articubot_one:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/diffdrive_arduino -- -j4 -l4
+[0.317s] [35m[1mScanning dependencies of target diffdrive_arduino[0m
+[0.423s] [ 42%] Built target fake_robot
+[0.522s] [ 57%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o[0m
+[6.735s] [01m[K/home/abcs/robo_ws/src/diffdrive_arduino/src/diffdrive_arduino.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type DiffDriveArduino::read()[m[K’:
+[6.735s] [01m[K/home/abcs/robo_ws/src/diffdrive_arduino/src/diffdrive_arduino.cpp:101:36:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K((DiffDriveArduino*)this)->DiffDriveArduino::arduino_.ArduinoComms::readEncoderValues(((DiffDriveArduino*)this)->DiffDriveArduino::l_wheel_.Wheel::enc, ((DiffDriveArduino*)this)->DiffDriveArduino::r_wheel_.Wheel::enc)[m[K’ from ‘[01m[Kvoid[m[K’ to ‘[01m[Kbool[m[K’
+[6.736s]   101 |     if (![01;31m[Karduino_.readEncoderValues(l_wheel_.enc, r_wheel_.enc)[m[K) {
+[6.737s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.737s]       |                                    [01;31m[K|[m[K
+[6.738s]       |                                    [01;31m[Kvoid[m[K
+[6.738s] [01m[K/home/abcs/robo_ws/src/diffdrive_arduino/src/diffdrive_arduino.cpp:101:63:[m[K [01;31m[Kerror: [m[Kin argument to unary !
+[6.738s]   101 |     if (!arduino_.readEncoderValues(l_wheel_.enc, r_wheel_.enc[01;31m[K)[m[K) {
+[6.739s]       |                                                               [01;31m[K^[m[K
+[6.739s] [01m[K/home/abcs/robo_ws/src/diffdrive_arduino/src/diffdrive_arduino.cpp:110:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Wheel[m[K’ has no member named ‘[01m[Kenc_counts_per_rev[m[K’
+[6.740s]   110 |     l_wheel_.pos = ((double)l_wheel_.enc / l_wheel_.[01;31m[Kenc_counts_per_rev[m[K) * 2.0 * M_PI;
+[6.740s]       |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.740s] [01m[K/home/abcs/robo_ws/src/diffdrive_arduino/src/diffdrive_arduino.cpp:111:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Wheel[m[K’ has no member named ‘[01m[Kenc_counts_per_rev[m[K’
+[6.741s]   111 |     r_wheel_.pos = ((double)r_wheel_.enc / r_wheel_.[01;31m[Kenc_counts_per_rev[m[K) * 2.0 * M_PI;
+[6.741s]       |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.123s] make[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:63: CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o] Error 1
+[9.124s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+[9.125s] make: *** [Makefile:141: all] Error 2
+[9.130s] Invoked command in '/home/abcs/robo_ws/build/diffdrive_arduino' returned '2': CMAKE_PREFIX_PATH=/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/articubot_one:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/diffdrive_arduino -- -j4 -l4

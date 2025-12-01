@@ -1,0 +1,301 @@
+[0.000000] (-) TimerEvent: {}
+[0.000941] (articubot_one) JobQueued: {'identifier': 'articubot_one', 'dependencies': OrderedDict()}
+[0.001260] (lidar_box_filter) JobQueued: {'identifier': 'lidar_box_filter', 'dependencies': OrderedDict()}
+[0.002095] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.002666] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('serial', '/home/abcs/robo_ws/install/serial')])}
+[0.003147] (serial) JobStarted: {'identifier': 'serial'}
+[0.035933] (articubot_one) JobStarted: {'identifier': 'articubot_one'}
+[0.064471] (lidar_box_filter) JobStarted: {'identifier': 'lidar_box_filter'}
+[0.099694] (-) TimerEvent: {}
+[0.108067] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.110824] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[0.113989] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abcs/robo_ws/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/abcs/robo_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '10.59.135.84 39286 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino/lib:/home/abcs/robo_ws/install/serial/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/abcs/robo_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/lidar_box_filter:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.59.135.84 39286 10.59.135.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/abcs/robo_ws/install/lidar_box_filter/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/articubot_one:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy')]), 'shell': False}
+[0.132361] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'cmake'}
+[0.135277] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'build'}
+[0.136341] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abcs/robo_ws/build/articubot_one', '--', '-j4', '-l4'], 'cwd': '/home/abcs/robo_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '10.59.135.84 39286 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino/lib:/home/abcs/robo_ws/install/serial/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/abcs/robo_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/lidar_box_filter:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/articubot_one'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.59.135.84 39286 10.59.135.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/abcs/robo_ws/install/lidar_box_filter/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/articubot_one:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy')]), 'shell': False}
+[0.200043] (-) TimerEvent: {}
+[0.302691] (-) TimerEvent: {}
+[0.404577] (-) TimerEvent: {}
+[0.424304] (serial) StdoutLine: {'line': b'[ 28%] Built target serial\n'}
+[0.432036] (serial) StdoutLine: {'line': b'[ 42%] Built target gtest\n'}
+[0.434774] (serial) StdoutLine: {'line': b'[ 57%] Built target gtest_main\n'}
+[0.504817] (-) TimerEvent: {}
+[0.538286] (serial) StdoutLine: {'line': b'[ 71%] Built target serial_example\n'}
+[0.552372] (serial) StdoutLine: {'line': b'[ 85%] Built target serial-test-timer\n'}
+[0.569068] (serial) StdoutLine: {'line': b'[100%] Built target serial-test\n'}
+[0.604979] (-) TimerEvent: {}
+[0.705695] (-) TimerEvent: {}
+[0.806374] (-) TimerEvent: {}
+[0.907085] (-) TimerEvent: {}
+[1.007807] (-) TimerEvent: {}
+[1.108504] (-) TimerEvent: {}
+[1.209326] (-) TimerEvent: {}
+[1.255714] (articubot_one) CommandEnded: {'returncode': 0}
+[1.258493] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'install'}
+[1.301433] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abcs/robo_ws/build/articubot_one'], 'cwd': '/home/abcs/robo_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '10.59.135.84 39286 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino/lib:/home/abcs/robo_ws/install/serial/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/abcs/robo_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/lidar_box_filter:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/articubot_one'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.59.135.84 39286 10.59.135.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/abcs/robo_ws/install/lidar_box_filter/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/articubot_one:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy')]), 'shell': False}
+[1.311285] (-) TimerEvent: {}
+[1.315317] (serial) CommandEnded: {'returncode': 0}
+[1.318276] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[1.319298] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abcs/robo_ws/build/serial'], 'cwd': '/home/abcs/robo_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '10.59.135.84 39286 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino/lib:/home/abcs/robo_ws/install/serial/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/abcs/robo_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/lidar_box_filter:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.59.135.84 39286 10.59.135.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/abcs/robo_ws/install/lidar_box_filter/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/articubot_one:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy')]), 'shell': False}
+[1.350126] (articubot_one) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.352714] (articubot_one) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.356102] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_robot.yaml\n'}
+[1.358958] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml\n'}
+[1.361757] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/drive_bot.rviz\n'}
+[1.362520] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/empty.yaml\n'}
+[1.363397] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/gaz_ros2_ctl_use_sim.yaml\n'}
+[1.364233] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/gazebo_params.yaml\n'}
+[1.365649] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/joystick.yaml\n'}
+[1.366854] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/main.rviz\n'}
+[1.369870] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/map.rviz\n'}
+[1.372030] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.374289] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml\n'}
+[1.376306] (serial) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.376870] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml\n'}
+[1.379063] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml\n'}
+[1.379790] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/lib/libserial.a\n'}
+[1.383096] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml\n'}
+[1.384429] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/include/serial/serial.h\n'}
+[1.386572] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz\n'}
+[1.387568] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/include/serial/v8stdint.h\n'}
+[1.390295] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[1.391891] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/camera.xacro\n'}
+[1.393731] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[1.396186] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/depth_camera.xacro\n'}
+[1.398525] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/face.xacro\n'}
+[1.399846] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[1.401884] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/gazebo_control.xacro\n'}
+[1.403107] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[1.404913] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro\n'}
+[1.405621] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/lidar.xacro\n'}
+[1.408065] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[1.408687] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro\n'}
+[1.409271] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[1.412440] (-) TimerEvent: {}
+[1.413222] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro\n'}
+[1.414009] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/path.sh\n'}
+[1.416804] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro\n'}
+[1.417462] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/path.dsv\n'}
+[1.418109] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.bash\n'}
+[1.423254] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py\n'}
+[1.425022] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.sh\n'}
+[1.427635] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py\n'}
+[1.429223] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.zsh\n'}
+[1.432294] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/cyril.launch.py\n'}
+[1.435011] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/joystick.launch.py\n'}
+[1.438706] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.dsv\n'}
+[1.441520] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/launch_robot.launch.py\n'}
+[1.444064] (serial) StdoutLine: {'line': b'-- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/package.dsv\n'}
+[1.447155] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py\n'}
+[1.448430] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/localization_launch.py\n'}
+[1.451125] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/navigation_launch.py\n'}
+[1.454069] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/online_async_launch.py\n'}
+[1.454890] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/rplidar.launch.py\n'}
+[1.455779] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py\n'}
+[1.456611] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/worlds/empty.world\n'}
+[1.457590] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/worlds/obstacles.world\n'}
+[1.458511] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one\n'}
+[1.464345] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one\n'}
+[1.467957] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh\n'}
+[1.471057] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv\n'}
+[1.473906] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/path.sh\n'}
+[1.478559] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/environment/path.dsv\n'}
+[1.484822] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.bash\n'}
+[1.485723] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.sh\n'}
+[1.486308] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.zsh\n'}
+[1.487158] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/local_setup.dsv\n'}
+[1.487961] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/package.dsv\n'}
+[1.488920] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[1.489664] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.490245] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.490914] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[1.491587] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[1.492168] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/package.xml\n'}
+[1.492814] (serial) CommandEnded: {'returncode': 0}
+[1.494225] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one\n'}
+[1.495188] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake\n'}
+[1.495925] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake\n'}
+[1.496527] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/articubot_one/share/articubot_one/package.xml\n'}
+[1.513369] (-) TimerEvent: {}
+[1.572077] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[1.579178] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[1.605609] (articubot_one) CommandEnded: {'returncode': 0}
+[1.613570] (-) TimerEvent: {}
+[1.681186] (articubot_one) JobEnded: {'identifier': 'articubot_one', 'rc': 0}
+[1.685746] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[1.688999] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[1.693120] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abcs/robo_ws/build/diffdrive_arduino', '--', '-j4', '-l4'], 'cwd': '/home/abcs/robo_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '10.59.135.84 39286 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino/lib:/home/abcs/robo_ws/install/serial/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/abcs/robo_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/lidar_box_filter:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.59.135.84 39286 10.59.135.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/abcs/robo_ws/install/lidar_box_filter/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/articubot_one:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy')]), 'shell': False}
+[1.713815] (-) TimerEvent: {}
+[1.814819] (-) TimerEvent: {}
+[1.915699] (-) TimerEvent: {}
+[1.919449] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target diffdrive_arduino\x1b[0m\n'}
+[2.015904] (-) TimerEvent: {}
+[2.026916] (diffdrive_arduino) StdoutLine: {'line': b'[ 42%] Built target fake_robot\n'}
+[2.102299] (diffdrive_arduino) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o\x1b[0m\n'}
+[2.116083] (-) TimerEvent: {}
+[2.218265] (-) TimerEvent: {}
+[2.319294] (-) TimerEvent: {}
+[2.420058] (-) TimerEvent: {}
+[2.520863] (-) TimerEvent: {}
+[2.621904] (-) TimerEvent: {}
+[2.722981] (-) TimerEvent: {}
+[2.823835] (-) TimerEvent: {}
+[2.924711] (-) TimerEvent: {}
+[3.025563] (-) TimerEvent: {}
+[3.126793] (-) TimerEvent: {}
+[3.187340] (lidar_box_filter) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lidar_box_filter', 'build', '--build-base', '/home/abcs/robo_ws/build/lidar_box_filter/build', 'install', '--record', '/home/abcs/robo_ws/build/lidar_box_filter/install.log', '--install-scripts', '$base/lib/lidar_box_filter', '--single-version-externally-managed'], 'cwd': '/home/abcs/robo_ws/src/lidar_box_filter', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'abcs', 'SSH_CLIENT': '10.59.135.84 39286 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/abcs/robo_ws/install/diffdrive_arduino/lib:/home/abcs/robo_ws/install/serial/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/abcs', 'OLDPWD': '/home/abcs', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/abcs/robo_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'abcs', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/lidar_box_filter:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/abcs/robo_ws/build/lidar_box_filter', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.59.135.84 39286 10.59.135.37 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/abcs/robo_ws/build/lidar_box_filter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abcs/robo_ws/install/lidar_box_filter/lib/python3.8/site-packages:/home/abcs/robo_ws/install/lidar_box_filter/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/articubot_one'}, 'shell': False}
+[3.226976] (-) TimerEvent: {}
+[3.328951] (-) TimerEvent: {}
+[3.429928] (-) TimerEvent: {}
+[3.530980] (-) TimerEvent: {}
+[3.632304] (-) TimerEvent: {}
+[3.733189] (-) TimerEvent: {}
+[3.834044] (-) TimerEvent: {}
+[3.934896] (-) TimerEvent: {}
+[4.035732] (-) TimerEvent: {}
+[4.136546] (-) TimerEvent: {}
+[4.237463] (-) TimerEvent: {}
+[4.338345] (-) TimerEvent: {}
+[4.341602] (lidar_box_filter) StdoutLine: {'line': b'running egg_info\n'}
+[4.345813] (lidar_box_filter) StdoutLine: {'line': b'writing ../../build/lidar_box_filter/lidar_box_filter.egg-info/PKG-INFO\n'}
+[4.347106] (lidar_box_filter) StdoutLine: {'line': b'writing dependency_links to ../../build/lidar_box_filter/lidar_box_filter.egg-info/dependency_links.txt\n'}
+[4.349161] (lidar_box_filter) StdoutLine: {'line': b'writing entry points to ../../build/lidar_box_filter/lidar_box_filter.egg-info/entry_points.txt\n'}
+[4.350954] (lidar_box_filter) StdoutLine: {'line': b'writing requirements to ../../build/lidar_box_filter/lidar_box_filter.egg-info/requires.txt\n'}
+[4.351437] (lidar_box_filter) StdoutLine: {'line': b'writing top-level names to ../../build/lidar_box_filter/lidar_box_filter.egg-info/top_level.txt\n'}
+[4.438533] (-) TimerEvent: {}
+[4.497215] (lidar_box_filter) StdoutLine: {'line': b"reading manifest file '../../build/lidar_box_filter/lidar_box_filter.egg-info/SOURCES.txt'\n"}
+[4.501692] (lidar_box_filter) StdoutLine: {'line': b"writing manifest file '../../build/lidar_box_filter/lidar_box_filter.egg-info/SOURCES.txt'\n"}
+[4.502940] (lidar_box_filter) StdoutLine: {'line': b'running build\n'}
+[4.504201] (lidar_box_filter) StdoutLine: {'line': b'running build_py\n'}
+[4.505794] (lidar_box_filter) StdoutLine: {'line': b'running install\n'}
+[4.518720] (lidar_box_filter) StdoutLine: {'line': b'running install_lib\n'}
+[4.519584] (lidar_box_filter) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.527343] (lidar_box_filter) StdoutLine: {'line': b"removing '/home/abcs/robo_ws/install/lidar_box_filter/lib/python3.8/site-packages/lidar_box_filter-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.529101] (lidar_box_filter) StdoutLine: {'line': b'Copying ../../build/lidar_box_filter/lidar_box_filter.egg-info to /home/abcs/robo_ws/install/lidar_box_filter/lib/python3.8/site-packages/lidar_box_filter-0.0.0-py3.8.egg-info\n'}
+[4.536787] (lidar_box_filter) StdoutLine: {'line': b'running install_scripts\n'}
+[4.538707] (-) TimerEvent: {}
+[4.614127] (lidar_box_filter) StdoutLine: {'line': b'Installing box_filter script to /home/abcs/robo_ws/install/lidar_box_filter/lib/lidar_box_filter\n'}
+[4.615956] (lidar_box_filter) StdoutLine: {'line': b"writing list of installed files to '/home/abcs/robo_ws/build/lidar_box_filter/install.log'\n"}
+[4.638951] (-) TimerEvent: {}
+[4.720519] (lidar_box_filter) CommandEnded: {'returncode': 0}
+[4.739949] (-) TimerEvent: {}
+[4.757899] (lidar_box_filter) JobEnded: {'identifier': 'lidar_box_filter', 'rc': 0}
+[4.840147] (-) TimerEvent: {}
+[4.940925] (-) TimerEvent: {}
+[5.041722] (-) TimerEvent: {}
+[5.142801] (-) TimerEvent: {}
+[5.243582] (-) TimerEvent: {}
+[5.344359] (-) TimerEvent: {}
+[5.445131] (-) TimerEvent: {}
+[5.545917] (-) TimerEvent: {}
+[5.646786] (-) TimerEvent: {}
+[5.747549] (-) TimerEvent: {}
+[5.848316] (-) TimerEvent: {}
+[5.949137] (-) TimerEvent: {}
+[6.049901] (-) TimerEvent: {}
+[6.150817] (-) TimerEvent: {}
+[6.251588] (-) TimerEvent: {}
+[6.352356] (-) TimerEvent: {}
+[6.453140] (-) TimerEvent: {}
+[6.553975] (-) TimerEvent: {}
+[6.654837] (-) TimerEvent: {}
+[6.755626] (-) TimerEvent: {}
+[6.856413] (-) TimerEvent: {}
+[6.957206] (-) TimerEvent: {}
+[7.057994] (-) TimerEvent: {}
+[7.158848] (-) TimerEvent: {}
+[7.259655] (-) TimerEvent: {}
+[7.360445] (-) TimerEvent: {}
+[7.461284] (-) TimerEvent: {}
+[7.562055] (-) TimerEvent: {}
+[7.662925] (-) TimerEvent: {}
+[7.763710] (-) TimerEvent: {}
+[7.864483] (-) TimerEvent: {}
+[7.965293] (-) TimerEvent: {}
+[8.066069] (-) TimerEvent: {}
+[8.166914] (-) TimerEvent: {}
+[8.267677] (-) TimerEvent: {}
+[8.368434] (-) TimerEvent: {}
+[8.469221] (-) TimerEvent: {}
+[8.569989] (-) TimerEvent: {}
+[8.670823] (-) TimerEvent: {}
+[8.771598] (-) TimerEvent: {}
+[8.872380] (-) TimerEvent: {}
+[8.973191] (-) TimerEvent: {}
+[9.073977] (-) TimerEvent: {}
+[9.174826] (-) TimerEvent: {}
+[9.275592] (-) TimerEvent: {}
+[9.376381] (-) TimerEvent: {}
+[9.477188] (-) TimerEvent: {}
+[9.577995] (-) TimerEvent: {}
+[9.678844] (-) TimerEvent: {}
+[9.779978] (-) TimerEvent: {}
+[9.880761] (-) TimerEvent: {}
+[9.981577] (-) TimerEvent: {}
+[10.082418] (-) TimerEvent: {}
+[10.183217] (-) TimerEvent: {}
+[10.284075] (-) TimerEvent: {}
+[10.384883] (-) TimerEvent: {}
+[10.485651] (-) TimerEvent: {}
+[10.586497] (-) TimerEvent: {}
+[10.687246] (-) TimerEvent: {}
+[10.787981] (-) TimerEvent: {}
+[10.888775] (-) TimerEvent: {}
+[10.989545] (-) TimerEvent: {}
+[11.090315] (-) TimerEvent: {}
+[11.191128] (-) TimerEvent: {}
+[11.291880] (-) TimerEvent: {}
+[11.392614] (-) TimerEvent: {}
+[11.493462] (-) TimerEvent: {}
+[11.594361] (-) TimerEvent: {}
+[11.695226] (-) TimerEvent: {}
+[11.796037] (-) TimerEvent: {}
+[11.852372] (diffdrive_arduino) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libdiffdrive_arduino.so\x1b[0m\n'}
+[11.896220] (-) TimerEvent: {}
+[11.997068] (-) TimerEvent: {}
+[12.098139] (-) TimerEvent: {}
+[12.199500] (-) TimerEvent: {}
+[12.300463] (-) TimerEvent: {}
+[12.401602] (-) TimerEvent: {}
+[12.502635] (-) TimerEvent: {}
+[12.603478] (-) TimerEvent: {}
+[12.704339] (-) TimerEvent: {}
+[12.803063] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target diffdrive_arduino\n'}
+[12.804430] (-) TimerEvent: {}
+[12.845026] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[12.847305] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'install'}
+[12.848317] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abcs/robo_ws/build/diffdrive_arduino'], 'cwd': '/home/abcs/robo_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'abcs'), ('SSH_CLIENT', '10.59.135.84 39286 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino/lib:/home/abcs/robo_ws/install/serial/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/abcs'), ('OLDPWD', '/home/abcs'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/abcs/robo_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'abcs'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/lidar_box_filter:/home/abcs/robo_ws/install/articubot_one:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/abcs/robo_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.59.135.84 39286 10.59.135.37 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/abcs/robo_ws/install/lidar_box_filter/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/abcs/robo_ws/install/serial:/home/abcs/robo_ws/install/diffdrive_arduino:/home/abcs/robo_ws/install/articubot_one:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy')]), 'shell': False}
+[12.890233] (diffdrive_arduino) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.891892] (diffdrive_arduino) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.893294] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino//robot_hardware.xml\n'}
+[12.894521] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino//fake_robot_hardware.xml\n'}
+[12.896323] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so\n'}
+[12.897393] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/lib/libfake_robot.so\n'}
+[12.899557] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/controllers/robot_controller_example.yaml\n'}
+[12.901194] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/fake_robot.launch.py\n'}
+[12.902018] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/test_robot.launch.py\n'}
+[12.903816] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh\n'}
+[12.904531] (-) TimerEvent: {}
+[12.905225] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv\n'}
+[12.906711] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino\n'}
+[12.908182] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino\n'}
+[12.909452] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh\n'}
+[12.910757] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv\n'}
+[12.912050] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh\n'}
+[12.913270] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv\n'}
+[12.914500] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash\n'}
+[12.915772] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh\n'}
+[12.916954] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh\n'}
+[12.918138] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv\n'}
+[12.919093] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv\n'}
+[12.957321] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino\n'}
+[12.958744] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino\n'}
+[12.960057] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.961319] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.962628] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake\n'}
+[12.963791] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake\n'}
+[12.965279] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/abcs/robo_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml\n'}
+[12.971122] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[13.004667] (-) TimerEvent: {}
+[13.048538] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 0}
+[13.051855] (-) EventReactorShutdown: {}

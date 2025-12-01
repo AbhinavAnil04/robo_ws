@@ -1,0 +1,44 @@
+[0.108s] Invoking command in '/home/abcs/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/abcs/robo_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/abcs/robo_ws/install/serial
+[0.200s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.345s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.363s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.456s] -- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[1.498s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.893s] -- Configuring done
+[1.988s] -- Generating done
+[2.008s] -- Build files have been written to: /home/abcs/robo_ws/build/serial
+[2.017s] Invoked command in '/home/abcs/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/abcs/robo_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/abcs/robo_ws/install/serial
+[2.032s] Invoking command in '/home/abcs/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/serial -- -j4 -l4
+[2.285s] [ 14%] Built target gtest
+[2.314s] [ 42%] Built target serial
+[2.399s] [ 57%] Built target gtest_main
+[2.474s] [ 71%] Built target serial_example
+[2.589s] [ 85%] Built target serial-test
+[2.598s] [100%] Built target serial-test-timer
+[2.646s] Invoked command in '/home/abcs/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/serial -- -j4 -l4
+[2.660s] Invoking command in '/home/abcs/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/serial
+[2.697s] -- Install configuration: ""
+[2.699s] -- Execute custom install script
+[2.701s] -- Symlinking: /home/abcs/robo_ws/install/serial/lib/libserial.a
+[2.742s] -- Symlinking: /home/abcs/robo_ws/install/serial/include/serial/serial.h
+[2.783s] -- Symlinking: /home/abcs/robo_ws/install/serial/include/serial/v8stdint.h
+[2.823s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/environment/library_path.sh
+[2.864s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/environment/library_path.dsv
+[2.909s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[2.955s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[2.996s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[3.037s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[3.080s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/environment/path.sh
+[3.119s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/environment/path.dsv
+[3.160s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/local_setup.bash
+[3.199s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/local_setup.sh
+[3.241s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/local_setup.zsh
+[3.282s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/local_setup.dsv
+[3.323s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/package.dsv
+[3.367s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/packages/serial
+[3.409s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.453s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[3.496s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[3.536s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[3.590s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/package.xml
+[3.662s] Invoked command in '/home/abcs/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/serial

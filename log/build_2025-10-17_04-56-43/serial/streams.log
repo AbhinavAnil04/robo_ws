@@ -1,0 +1,34 @@
+[0.146s] Invoking command in '/home/abcs/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/serial -- -j4 -l4
+[0.680s] [ 28%] Built target serial
+[0.690s] [ 42%] Built target gtest_main
+[0.714s] [ 57%] Built target gtest
+[0.799s] [ 71%] Built target serial_example
+[0.829s] [ 85%] Built target serial-test-timer
+[0.841s] [100%] Built target serial-test
+[1.397s] Invoked command in '/home/abcs/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/serial -- -j4 -l4
+[1.408s] Invoking command in '/home/abcs/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/serial
+[1.454s] -- Install configuration: ""
+[1.460s] -- Execute custom install script
+[1.465s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/lib/libserial.a
+[1.471s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/include/serial/serial.h
+[1.473s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/include/serial/v8stdint.h
+[1.477s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/library_path.sh
+[1.481s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/library_path.dsv
+[1.484s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[1.487s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[1.491s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[1.492s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[1.493s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/path.sh
+[1.495s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/environment/path.dsv
+[1.497s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.bash
+[1.498s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.sh
+[1.499s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.zsh
+[1.500s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/local_setup.dsv
+[1.500s] -- Symlinking: /home/abcs/robo_ws/install/serial/share/serial/package.dsv
+[1.540s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/ament_index/resource_index/packages/serial
+[1.543s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.546s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[1.549s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[1.549s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[1.550s] -- Up-to-date symlink: /home/abcs/robo_ws/install/serial/share/serial/package.xml
+[1.566s] Invoked command in '/home/abcs/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/serial
