@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Include inertial macro definitions -->
+  <xacro:include filename="inertial_macros.xacro"/>
+
+  <!-- Materials -->
+  <material name="white"><color rgba="1 1 1 1"/></material>
+  <material name="blue"><color rgba="0.2 0.2 1 1"/></material>
+  <material name="black"><color rgba="0 0 0 1"/></material>
+  <material name="red"><color rgba="1 0 0 1"/></material>
+
+  <!-- Base Link -->
+  <link name="base_link"/>
+
+  <!-- Chassis -->
+  <joint name="chassis_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="chassis"/>
+    <origin xyz="0 0 0"/>
+  </joint>
+
+  <link name="chassis"/>
+  
+
+  <!-- Top Pillars Macro -->
+  <xacro:macro name="top_pillar" params="name x y z">
+    <joint name="${name}_joint" type="fixed">
+      <parent link="chassis"/>
+      <child link="${name}"/>
+      <origin xyz="${x} ${y} ${z}"/>
+    </joint>
+    <link name="${name}">
+      <visual>
+        <geometry><box size="0.02 0.02 0.74"/></geometry>
+        <laser_retro>0.0</laser_retro> 
+        <material name="white"/>
+      </visual>
+      <collision>
+        <geometry><box size="0.02 0.02 0.74"/></geometry>
+      </collision>
+      <xacro:inertial_box mass="0.3" x="0.02" y="0.02" z="0.74">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </xacro:inertial_box>
+    </link>
+  </xacro:macro>
+
+  <!-- Top Four Pillars -->
+  <xacro:top_pillar name="top_pillar_fl" x="0.1175" y="0.1325" z="0.66"/>
+  <xacro:top_pillar name="top_pillar_fr" x="0.1175" y="-0.1325" z="0.66"/>
+  <xacro:top_pillar name="top_pillar_rl" x="-0.1175" y="0.1325" z="0.66"/>
+  <xacro:top_pillar name="top_pillar_rr" x="-0.1175" y="-0.1325" z="0.66"/>
+
+  <!-- Bottom Pillars Macro -->
+  <!-- Bottom Pillars Macro -->
+<xacro:macro name="pillar" params="name x y z">
+  <joint name="${name}_joint" type="fixed">
+    <parent link="chassis"/>
+    <child link="${name}"/>
+    <origin xyz="${x} ${y} ${z}"/>
+  </joint>
+  <link name="${name}">
+    <visual>
+      <geometry><box size="0.02 0.02 0.29"/></geometry>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry><box size="0.02 0.02 0.29"/></geometry>
+    </collision>
+    <xacro:inertial_box mass="0.1" x="0.02" y="0.02" z="0.29">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
+  </link>
+</xacro:macro>
+
+  <!-- Four Bottom Pillars -->
+  <xacro:pillar name="pillar_fl" x="0.24" y="0.23" z="0.145"/>
+  <xacro:pillar name="pillar_fr" x="0.24" y="-0.23" z="0.145"/>
+  <xacro:pillar name="pillar_rl" x="-0.24" y="0.23" z="0.145"/>
+  <xacro:pillar name="pillar_rr" x="-0.24" y="-0.23" z="0.145"/>
+
+  <!-- Plates Macro -->
+  <xacro:macro name="plate" params="name z">
+    <joint name="${name}_joint" type="fixed">
+      <parent link="chassis"/>
+      <child link="${name}"/>
+      <origin xyz="0 0 ${z}"/>
+    </joint>
+    <link name="${name}">
+      <visual>
+        <geometry><box size="0.5 0.5 0.01"/></geometry>
+        <material name="red"/>
+      </visual>
+      <collision>
+        <geometry><box size="0.5 0.5 0.01"/></geometry>
+      </collision>
+      <xacro:inertial_box mass="0.2" x="0.5" y="0.5" z="0.01">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </xacro:inertial_box>
+    </link>
+  </xacro:macro>
+<!--Top Plates Macro -->
+  <xacro:macro name="top_plate" params="name z">
+    <joint name="${name}_joint" type="fixed">
+      <parent link="chassis"/>
+      <child link="${name}"/>
+      <origin xyz="0 0 ${z}"/>
+    </joint>
+    <link name="${name}">
+      <visual>
+        <geometry><box size="0.25 0.28 0.01"/></geometry>
+        <material name="white"/>
+      </visual>
+      <collision>
+        <geometry><box size="0.255 0.285 0.01"/></geometry>
+      </collision>
+      <xacro:inertial_box mass="0.2" x="0.255" y="0.285" z="0.01">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </xacro:inertial_box>
+    </link>
+  </xacro:macro>
+   <!-- Top Plate -->
+<xacro:top_plate name="plate_top_cover" z="1.03"/>
+
+  <!-- Three Plates -->
+  <xacro:plate name="plate_bottom" z="0.005"/>
+  <xacro:plate name="plate_middle" z="0.125"/>
+  <xacro:plate name="plate_top" z="0.285"/>
+  
+
+  <!-- Wheels Macro -->
+  <!-- Wheels Macro -->
+<xacro:macro name="wheel" params="name x y rpy_x rpy_y rpy_z direction fixed:=false">
+  <xacro:if value="${fixed == 'true'}">
+    <joint name="${name}_joint" type="fixed">
+      <parent link="base_link"/>
+      <child link="${name}"/>
+      <origin xyz="${x} ${y} -0.015" rpy="${rpy_x} ${rpy_y} ${rpy_z}"/>
+    </joint>
+  </xacro:if>
+  <xacro:unless value="${fixed == 'true'}">
+    <joint name="${name}_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="${name}"/>
+      <origin xyz="${x} ${y} -0.015" rpy="${rpy_x} ${rpy_y} ${rpy_z}"/>
+      <axis xyz="0 0 ${direction}"/>
+    </joint>
+  </xacro:unless>
+  <link name="${name}">
+    <visual>
+      <geometry><cylinder radius="0.055" length="0.03"/></geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <geometry><cylinder radius="0.055" length="0.03"/></geometry>
+    </collision>
+    <xacro:inertial_cylinder mass="1.5" length="0.03" radius="0.055">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_cylinder>
+  </link>
+</xacro:macro>
+
+<!-- Gazeboo -->
+
+  <!-- Four Wheels -->
+  <!-- Rear Wheels: motor-driven -->
+<xacro:wheel name="rear_left_wheel"  x="-0.13" y="0.135"  rpy_x="-${pi/2}" rpy_y="0" rpy_z="0" direction="1"/>
+<xacro:wheel name="rear_right_wheel" x="-0.13" y="-0.135" rpy_x="${pi/2}"  rpy_y="0" rpy_z="0" direction="-1"/>
+
+<!-- Front Wheels: fixed -->
+<xacro:wheel name="front_left_wheel" x="0.13"  y="0.135"  rpy_x="-${pi/2}" rpy_y="0" rpy_z="0" direction="1" fixed="true"/>
+<xacro:wheel name="front_right_wheel" x="0.13" y="-0.135" rpy_x="${pi/2}"  rpy_y="0" rpy_z="0" direction="-1" fixed="true"/>
+
+<!-- Gazebo Material Assignments -->
+
+<!-- Plates -->
+<gazebo reference="plate_bottom"><material>Gazebo/Red</material></gazebo>
+<gazebo reference="plate_middle"><material>Gazebo/Red</material></gazebo>
+<gazebo reference="plate_top"><material>Gazebo/Red</material></gazebo>
+<gazebo reference="plate_top_cover"><material>Gazebo/White</material></gazebo>
+
+<!-- Pillars -->
+<gazebo reference="pillar_fl"><material>Gazebo/Black</material></gazebo>
+<gazebo reference="pillar_fr"><material>Gazebo/Black</material></gazebo>
+<gazebo reference="pillar_rl"><material>Gazebo/Black</material></gazebo>
+<gazebo reference="pillar_rr"><material>Gazebo/Black</material></gazebo>
+
+<gazebo reference="top_pillar_fl"><material>Gazebo/White</material></gazebo>
+<gazebo reference="top_pillar_fr"><material>Gazebo/White</material></gazebo>
+<gazebo reference="top_pillar_rl"><material>Gazebo/White</material></gazebo>
+<gazebo reference="top_pillar_rr"><material>Gazebo/White</material></gazebo>
+
+<!-- Chassis -->
+<gazebo reference="chassis"><material>Gazebo/White</material></gazebo>
+
+<!-- Wheels -->
+<gazebo reference="rear_left_wheel"><material>Gazebo/Blue</material></gazebo>
+<gazebo reference="rear_right_wheel"><material>Gazebo/Blue</material></gazebo>
+<gazebo reference="front_left_wheel"><material>Gazebo/Blue</material><mu1 value="0.001"/><mu2 value="0.001"/></gazebo>
+<gazebo reference="front_right_wheel"><material>Gazebo/Blue</material><mu1 value="0.001"/><mu2 value="0.001"/></gazebo>
+
+  <!-- Base Footprint Frame -->
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_footprint"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="base_footprint"/>
+
+</robot>
