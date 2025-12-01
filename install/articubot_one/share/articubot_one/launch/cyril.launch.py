@@ -1,1 +1,0 @@
-/home/abcs/robo_ws/src/articubot_one/launch/cyril.launch.py

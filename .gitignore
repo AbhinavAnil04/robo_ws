@@ -1,0 +1,18 @@
+# ROS + Colcon Build Folders
+build/
+devel/
+install/
+log/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VSCode / Editor files
+.vscode/
+.idea/
+
+# Temporary / Backup files
+*.tmp
+*.swp
+*.bak

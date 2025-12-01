@@ -1,4 +1,0 @@
-Invoking command in '/home/abcs/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/serial -- -j4 -l4
-Invoked command in '/home/abcs/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --build /home/abcs/robo_ws/build/serial -- -j4 -l4
-Invoking command in '/home/abcs/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/serial
-Invoked command in '/home/abcs/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abcs/robo_ws/install/lidar_box_filter:/opt/ros/foxy /usr/bin/cmake --install /home/abcs/robo_ws/build/serial

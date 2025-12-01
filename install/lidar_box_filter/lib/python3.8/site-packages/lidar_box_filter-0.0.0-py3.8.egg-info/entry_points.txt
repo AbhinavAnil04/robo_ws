@@ -1,3 +1,0 @@
-[console_scripts]
-box_filter = lidar_box_filter.box_filter:main
-

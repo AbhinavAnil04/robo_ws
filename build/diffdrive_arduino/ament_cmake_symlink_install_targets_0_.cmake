@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/abcs/robo_ws/build/diffdrive_arduino/libdiffdrive_arduino.so" "/home/abcs/robo_ws/build/diffdrive_arduino/libfake_robot.so" "TARGETS" "diffdrive_arduino" "fake_robot" "DESTINATION" "lib")
